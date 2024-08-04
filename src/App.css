@@ -1,12 +1,13 @@
 .whole-page {
-  border: 1px solid;
-  border-color: white;
+  border: 2px solid;
+  border-color: #ede0c8;
   padding: 100px;
-  display: inline-flex;
+  display: flex;
+  position: fixed;
   margin: 25px;
   overflow-y: hidden;
   overflow-x:auto;
-  position: fixed;
+  
   top: 0;
   left: 0;
   bottom: 0;
@@ -14,60 +15,30 @@
 }
 
 .sidebar{
+  /* position: fixed; */
   border: 1px solid;
-  border-color: white;
+  border-color: blue;
   margin-right: 50px;
+  z-index: 1;
 }
 
 .social {
-  display: flex; /* Use flexbox for layout */
-  gap: 10px; /* Space between items */
+  /* display: flex; Use flexbox for layout */
+  /* gap: 10px;  */
+  /* margin-top: 10px; */
+  /* width: 200px;   */
+  /* height: 200px; */
   border: 1px solid;
-  border-color: white;
-  margin-top: 10px;
-}
-
-.title {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  font-weight: 750;
-  border: 1px solid;
-  border-color: white;
-  writing-mode: vertical-lr;  /* Vertical text from left to right */
-  text-orientation: mixed;    /* Mixed orientation */
-  transform: rotate(180deg);
-  
 }
 
 
-.images {
-  display: inline-flex;
-  column-gap: 10px;
+.logo { 
+  width: 60px;
 
-}
-
-.images img {
-  width: 425px;
-  height: auto;
-  border: 1px solid;
-  border-color: white;
-  object-fit: contain;
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-  border: 1px solid;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -75,7 +46,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -89,4 +60,67 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+ */
+
+.title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 750;
+  
+  border: 1px solid ;
+  display: flex; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
+
+  writing-mode: vertical-lr;
+  text-orientation:sideways;    /* Mixed orientation */
+  transform: rotate(180deg);
+
+  padding: 0.25em;
+}
+
+.links {
+  border-top: 1px solid white; /* Single border around the links container */
+}
+
+.bottomLink {
+  border-bottom: 1px solid white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  flex-direction: column;
+}
+
+
+.images-container {
+  /* position: relative; */
+  margin-left: 2em; /* Offset the images container to account for the sidebar width */
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.images {
+  display: inline-flex;
+  column-gap: 10px;
+}
+
+.images img {
+  width: 450px;
+  height: auto;
+  border: 1px solid;
+  border-color: #fff8ed;
+  object-fit: contain;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 
