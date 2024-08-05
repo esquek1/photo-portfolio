@@ -1,0 +1,22 @@
+
+.images-container {
+    /* position: relative; */
+    margin-left: 2em; /* Offset the images container to account for the sidebar width */
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .images {
+    display: inline-flex;
+    column-gap: 10px;
+  }
+  
+  .images img {
+    width: 450px;
+    height: auto;
+    border: 1px solid;
+    border-color: #fff8ed;
+    object-fit: contain;
+  }
+  
