@@ -10,12 +10,7 @@ function Sidenav() {
     <div className='sidebar'>
 			<div className=''>
 				<p className='title'>Debbie Dicdican Portfolio</p>
-				<a href="https://www.instagram.com/deldkyuubi/?hl=en" target="_blank">
-					<img src={instagramLogo} className="logo" alt="Instagram logo" />
-				</a>
-				<a href="https://www.linkedin.com/in/debbie-endena-dicdican-445845162/" target="_blank">
-					<img src={linkedInLogo} className="logo linkedin" alt="LinkedIn logo" />
-				</a>
+				
 			</div>
 			
 			{/* <div className='social'>
