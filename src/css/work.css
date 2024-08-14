@@ -1,18 +1,18 @@
 
 .images-container {
   /* position: relative; */
-  margin-left: 2em; /* Offset the images container to account for the sidebar width */
-  display: flex;
+  margin-top: 10px;
+  display: grid;
   align-items: center;
   overflow-y: auto;
 }
   
-.images {
+.images-item {
   display: inline-flex;
   column-gap: 10px;
 }
   
-.images img {
+.images-item img {
   width: 450px;
   height: auto;
   border: 1px solid;

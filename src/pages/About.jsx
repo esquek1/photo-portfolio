@@ -1,9 +1,17 @@
 import React from 'react'
 
-function about() {
+function About() {
   return (
-    <div>about</div>
+    <div className='grid-container'>
+      <div className='grid-item'>
+        Debbie Dicdican is a Los Angeles based photographer, where she is born and raised. 
+        <br/>
+        <br />
+        She is passionate about photography.
+      </div>
+
+    </div>
   )
 }
 
-export default about
+export default About

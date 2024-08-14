@@ -12,34 +12,24 @@ import './App.css'
 
 
 function App() {
-	useEffect(() => {
-		const handleWheel = (event) => {
-			const container = document.querySelector('.images-container');
-			if (container && event.deltaY !== 0) {
-				container.scrollLeft += event.deltaY;
-				event.preventDefault(); // Prevent default vertical scrolling behavior
-			}
-		};
-
-		window.addEventListener('wheel', handleWheel, { passive: false });
-
-		// Clean up the event listener on component unmount
-		return () => {
-			window.removeEventListener('wheel', handleWheel);
-		};
-	}, []);
-
 	return (
-		<div className='whole-page'>
-			<BrowserRouter>
-				<Sidenav/>
-				<Routes>  
+		<div className='grid-container'>
+			<Sidenav />
+		{/* <div className='grid-item sidenav'>
+			<Sidenav />
+		</div> */}
+			{/* <div className='grid-item content'>
+				<BrowserRouter>
+				<Routes>
 					<Route index element={<Home />} />
-					<Route index path="about" element={<About/>} />
+					<Route path="about" element={<About />} />
 					<Route path="contact" element={<Contact />} />
 					<Route path="work" element={<Work />} />
 				</Routes>
-			</BrowserRouter>
+				</BrowserRouter>
+			</div> */}
+			
+			
 			
 		</div>
 	)
