@@ -1,4 +1,4 @@
-# Photogrpaher Portfolio Website
+# Photographer Portfolio Website
 The website aims to provide a platform for showcasing the photographers work, featuring an image gallery, an about section, and a contact form.
 
 # Installation
