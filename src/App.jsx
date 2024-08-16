@@ -6,7 +6,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Work from './pages/Work';
 
-import Sidenav from './components/Sidenav'
+import Header from './components/Header'
 
 import './App.css'
 
@@ -14,20 +14,21 @@ import './App.css'
 function App() {
 	return (
 		<div className='grid-container'>
-			<Sidenav />
-		{/* <div className='grid-item sidenav'>
-			<Sidenav />
-		</div> */}
-			{/* <div className='grid-item content'>
-				<BrowserRouter>
+		
+		
+		<div className='grid-item content'>
+			<BrowserRouter>
+				<div className='grid-item sidenav'>
+					<Header />
+				</div> 
 				<Routes>
 					<Route index element={<Home />} />
 					<Route path="about" element={<About />} />
 					<Route path="contact" element={<Contact />} />
 					<Route path="work" element={<Work />} />
 				</Routes>
-				</BrowserRouter>
-			</div> */}
+			</BrowserRouter>
+		</div>
 			
 			
 			
@@ -35,4 +36,4 @@ function App() {
 	)
 }
 
-export default App
+export default App;

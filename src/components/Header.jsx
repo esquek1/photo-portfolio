@@ -1,19 +1,20 @@
 import React from 'react'
 import linkedInLogo from '/linkedin-logo.svg'
 import instagramLogo from '/instagram-logo.png'
-import "../css/sidenav.css"
+import "../css/header.css"
 import { Link } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
 
-
-function Sidenav() {
+function Header() {
   return (
-    <div className='sidebar'>
-		<div className='item item-1'>
+    <div className='header-container'>
+		<div className='header-item header-item-1'>
 			<p className='title'>Debbie Dicdican Portfolio</p>
 		</div>
 		
-		<div className='links item item-2'>
-			<div className='item social-item'>
+		<div className='links header-item header-item-2'>
+			<FiMenu className='menu-icon' />
+			<div className='header-item social-item'>
 				<a href="https://www.instagram.com/deldkyuubi/?hl=en" target="_blank">
 					<img src={instagramLogo} className="logo" alt="Instagram logo" />
 				</a>
@@ -45,4 +46,4 @@ function Sidenav() {
   )
 }
 
-export default Sidenav
+export default Header

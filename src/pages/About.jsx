@@ -2,8 +2,8 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='grid-container'>
-      <div className='grid-item'>
+    <div className='about-container'>
+      <div className='about-item'>
         Debbie Dicdican is a Los Angeles based photographer, where she is born and raised. 
         <br/>
         <br />
