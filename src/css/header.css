@@ -2,7 +2,7 @@
 .header-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(9, 1fr);
+	grid-template-rows: repeat(1, 1fr);
 	border: 1px solid seashell;
 	z-index: 1;
 	
@@ -42,8 +42,6 @@
 	.social-item {
 		display: none;
 	}
-
-	
 	.menu-icon {
 		display: inline;
 	}
@@ -52,8 +50,6 @@
 .menu-icon {
 	display: none;
 }
-
-
 
 .logo { 
 	width: 50px;
@@ -97,12 +93,7 @@
 
 @media (max-width: 425px){
 	.links {
-		z-index: 3;
-		overflow: hidden;
-		position: fixed;
-		bottom: 25px;
-		width: 100%;
-		border: 1px solid blue;
+		display: none;
 	}
 }
 .nav-list {

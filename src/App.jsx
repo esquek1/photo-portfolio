@@ -9,28 +9,40 @@ import Work from './pages/Work';
 import Header from './components/Header'
 
 import './App.css'
+import Footer from './components/Footer';
 
 
 function App() {
 	return (
 		<div className='grid-container'>
-		
-		
-		<div className='grid-item content'>
-			<BrowserRouter>
-				<div className='grid-item sidenav'>
-					<Header />
-				</div> 
-				<Routes>
-					<Route index element={<Home />} />
-					<Route path="about" element={<About />} />
-					<Route path="contact" element={<Contact />} />
-					<Route path="work" element={<Work />} />
-				</Routes>
-			</BrowserRouter>
-		</div>
-			
-			
+			<div className='grid-item content'>
+				<BrowserRouter>
+					<div className='header'>
+						<Header />
+					</div> 
+					<Routes>
+						<Route index element={<Home />} />
+						<Route path="about" element={<About />} />
+						<Route path="contact" element={<Contact />} />
+						<Route path="work" element={<Work />} />
+					</Routes>
+				</BrowserRouter>
+				item 1
+			</div>
+			<div className='grid-item'> item 2</div>
+			<div className='grid-item'> 
+				<BrowserRouter>
+					<div className='footer'>
+						<Footer />
+					</div> 
+					<Routes>
+						<Route index element={<Home />} />
+						<Route path="about" element={<About />} />
+						<Route path="contact" element={<Contact />} />
+						<Route path="work" element={<Work />} />
+					</Routes>
+				</BrowserRouter>
+			</div>
 			
 		</div>
 	)
