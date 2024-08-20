@@ -5,6 +5,7 @@ import "../css/header.css"
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 
+
 function Header() {
   return (
     <div className='header-container'>
@@ -14,6 +15,7 @@ function Header() {
 		
 		<div className='links header-item header-item-2'>
 			<FiMenu className='menu-icon' />
+	
 			<div className='header-item social-item'>
 				<a href="https://www.instagram.com/deldkyuubi/?hl=en" target="_blank">
 					<img src={instagramLogo} className="logo" alt="Instagram logo" />

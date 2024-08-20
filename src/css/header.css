@@ -2,7 +2,7 @@
 .header-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(1, 1fr);
+	grid-template-rows: repeat(9, 1fr);
 	border: 1px solid seashell;
 	z-index: 1;
 	
@@ -14,7 +14,8 @@
 	border: 1px solid yellow;
 }
 .links {
-	
+	display: grid;
+	gap: 10px;
 }
 
 .header-item {
@@ -42,6 +43,7 @@
 		display: none;
 	}
 
+	
 	.menu-icon {
 		display: inline;
 	}
@@ -71,7 +73,7 @@
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 40px;
 	margin: 10px;
-	
+	border: 1px solid;
 	/* padding-left: 20px;
 	margin: 0; */
 }
@@ -82,14 +84,27 @@
 	}
 }
 
+@media (max-width: 1024px){
+
+}
+
 @media (max-width: 768px){
 	.title {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
 
-
+@media (max-width: 425px){
+	.links {
+		z-index: 3;
+		overflow: hidden;
+		position: fixed;
+		bottom: 25px;
+		width: 100%;
+		border: 1px solid blue;
+	}
+}
 .nav-list {
 	/* display: block; */
 	display: flex;
@@ -118,3 +133,4 @@
 .nav-item.extraBorder  {
 	/* border-bottom: 1px solid; */
 }
+
