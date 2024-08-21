@@ -20,17 +20,20 @@ function App() {
 					<div className='header'>
 						<Header />
 					</div> 
-					<Routes>
-						<Route index element={<Home />} />
-						<Route path="about" element={<About />} />
-						<Route path="contact" element={<Contact />} />
-						<Route path="work" element={<Work />} />
-					</Routes>
+					<div className='header-links'>
+						<Routes>
+							<Route index element={<Home />} />
+							<Route path="about" element={<About />} />
+							<Route path="contact" element={<Contact />} />
+							<Route path="work" element={<Work />} />
+						</Routes>
+					</div>
+					
 				</BrowserRouter>
-				item 1
+			
 			</div>
-			<div className='grid-item'> item 2</div>
-			<div className='grid-item'> 
+		
+			<div className='grid-item footer-content'> 
 				<BrowserRouter>
 					<div className='footer'>
 						<Footer />

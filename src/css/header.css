@@ -94,8 +94,9 @@
 @media (max-width: 425px){
 	.links {
 		display: none;
-	}
+	}	
 }
+
 .nav-list {
 	/* display: block; */
 	display: flex;
