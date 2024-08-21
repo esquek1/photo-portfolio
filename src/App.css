@@ -2,7 +2,7 @@
   display: grid;
 	/* grid-template-rows: repeat(3, 1fr); */
   grid-template-rows: auto 1fr auto;
-  border: 2px solid;
+  border: 1px solid;
   border-color: #ede0c8;
   padding: 40px;
   /* display: flex; */
@@ -20,8 +20,8 @@
 
 @media (max-width: 425px){
   .grid-container {
-    margin: 20px;
-    padding: 20px;
+    margin: 16px;
+    padding: 16px;
   }
 
   .header-links {
@@ -29,7 +29,8 @@
   }
 }
 .grid-item {
-  border: 1px solid yellow;
+
+  
 }
 
 

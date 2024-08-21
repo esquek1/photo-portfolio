@@ -11,8 +11,9 @@
 .flex-container {
 	display: flex;
 	justify-content: flex-end;
-	border: 1px solid yellow;
+	
 }
+
 .links {
 	display: grid;
 	gap: 10px;
@@ -25,13 +26,28 @@
 .header-item-1 {
 	grid-column: span 2;
 	justify-items: center;
-	border: 1px solid cyan;
 }
 
 .header-item-2 {
 	grid-column: span 1;
-	border: 1px solid red;
+	
 }
+
+@media (max-width: 425px){
+	.links {
+		display: none;
+	}	
+
+	.header-item-1 {
+		grid-column: span 3;
+	}
+
+	.header-item-2 {
+		grid-column: none;
+		display: none;
+	}
+}
+
 
 .social-item{
 	display: flex;
@@ -91,11 +107,6 @@
 }
 
 
-@media (max-width: 425px){
-	.links {
-		display: none;
-	}	
-}
 
 .nav-list {
 	/* display: block; */
