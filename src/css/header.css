@@ -54,6 +54,8 @@
 	justify-content: flex-end;
 }
 
+
+
 @media (max-width: 768px){
 	.social-item {
 		display: none;
@@ -68,7 +70,7 @@
 }
 
 .logo { 
-	width: 50px;
+	width: 40px;
 	will-change: filter;
 	transition: filter 300ms;
 }
@@ -85,7 +87,7 @@
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 40px;
 	margin: 10px;
-	border: 1px solid;
+	
 	/* padding-left: 20px;
 	margin: 0; */
 }

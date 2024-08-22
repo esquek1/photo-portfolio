@@ -32,6 +32,7 @@ function App() {
 				</BrowserRouter>
 			
 			</div>
+	
 		
 			<div className='grid-item footer-content'> 
 				<BrowserRouter>
