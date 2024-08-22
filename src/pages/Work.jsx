@@ -35,7 +35,7 @@ function Work() {
 	// }, []);
   return (
     <div className='images-container'> 
-		<div className='button-container'>
+		{/* <div className='button-container'>
 			<button className='button' type="button" onClick={() => setSelectedFolder("Portraits")}>
 				Portraits
 			</button>  
@@ -48,7 +48,7 @@ function Work() {
 			<button className='button' type="button" onClick={() => setSelectedFolder("Automobile")}>
 				Automobile
 			</button>  
-		</div>
+		</div> */}
 		
 		<div className='images-item'>
 			<img src={suki_1} alt=""/>

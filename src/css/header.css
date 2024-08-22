@@ -69,6 +69,7 @@
 	display: none;
 }
 
+
 .logo { 
 	width: 40px;
 	will-change: filter;
@@ -122,7 +123,8 @@
 
 .nav-item {
 	margin-bottom: 0;
-	margin-left: 1em;
+	margin-left: 12px;
+	margin-right: 12px;
 }
 
 .nav-item a {
@@ -139,3 +141,44 @@
 	/* border-bottom: 1px solid; */
 }
 
+.dropdown-menu {
+	display: inline-block;
+
+}
+
+.dropdown-menu:hover {
+
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: none;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	opacity: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: #b6fbff;
+
+	text-decoration: none;
+	display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-menu:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-menu:hover  {
+	background-color: midnightblue;
+}

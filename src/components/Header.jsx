@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import linkedInLogo from '/linkedin-logo.svg'
 import instagramLogo from '/instagram-logo.png'
 import "../css/header.css"
@@ -7,6 +7,7 @@ import { FiMenu } from "react-icons/fi";
 
 
 function Header() {
+	const [selectedFolder, setSelectedFolder] = useState('Portraits');
   return (
     <div className='header-container'>
 		<div className='header-item header-item-1'>
@@ -36,9 +37,18 @@ function Header() {
 					<li className='nav-item'>
 						<Link to="/contact">Contact</Link>
 					</li>
-					<li className="nav-item extraBorder">
-						<Link to="/work">Work</Link>
-					</li>
+					<div className='dropdown-menu'>
+						<li className="nav-item extraBorder">
+							<Link to="/work">Work</Link>
+							<div className='dropdown-content'>
+								<a href='' onClick={() => setSelectedFolder("Portraits")}>Portraits</a>
+								<a href='' onClick={() => setSelectedFolder("Graduation")}>Graduation</a>
+								<a href='' onClick={() => setSelectedFolder("Wedding")}>Wedding</a>
+								<a href='' onClick={() => setSelectedFolder("Automobiles")}>Automobiles</a>
+							</div>
+						</li>
+					</div>
+					
 				</ul>
 				
 			</nav>
