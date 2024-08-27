@@ -16,39 +16,12 @@ function App() {
 	return (
 		<div className='grid-container'>
 			<BrowserRouter>
-			{/* <div className='grid-item content'>
-				<div className='header'>
-					<Header />
-				</div> 
-				<div className='header-links'>
-					<Routes>
-						<Route index element={<Home />} />
-						<Route path="about" element={<About />} />
-						<Route path="contact" element={<Contact />} />
-						<Route path="work" element={<Work />} />
-					</Routes>
-				</div>
-			</div> */}
 			<div className='grid-item header'>
 				<div className='header'>
 					<Header />
 				</div> 
 			</div>
-			<div className='grid-item content'>
-				<div className='header-links'>
-					<Routes>
-						<Route index element={<Home />} />
-						<Route path="about" element={<About />} />
-						<Route path="contact" element={<Contact />} />
-						<Route path="work" element={<Work />} />
-					</Routes>
-				</div>
-			</div>
-				
-			<div className='grid-item footer-content'> 
-				<div className='footer'>
-					<Footer />
-				</div> 
+			<div className='grid-item content '>
 				<Routes>
 					<Route index element={<Home />} />
 					<Route path="about" element={<About />} />
@@ -56,6 +29,13 @@ function App() {
 					<Route path="work" element={<Work />} />
 				</Routes>
 			</div>
+
+			<div className='grid-item footer-content'> 
+				<div className='footer'>
+					<Footer />
+				</div> 
+			</div>
+			
 			</BrowserRouter>
 		</div>
 	)
