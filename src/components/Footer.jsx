@@ -38,7 +38,6 @@ function Footer() {
                     </Link>
                 </li>
                 <li className="nav-item extraBorder">
-                   
                     <Link to="/work"> 
                         <div className='footer-icon'>
                             <MdPhotoLibrary />

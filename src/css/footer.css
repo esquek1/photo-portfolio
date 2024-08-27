@@ -12,3 +12,8 @@
 .footer-icon {
     font-size: 24px;
 }
+
+.footer-icon:hover,
+.footer-icon:active {
+    color: #0083b0;
+}

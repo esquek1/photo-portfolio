@@ -35,31 +35,33 @@ function Work() {
 	// }, []);
   return (
     <div className='images-container'> 
-		{/* <div className='button-container'>
-			<button className='button' type="button" onClick={() => setSelectedFolder("Portraits")}>
-				Portraits
-			</button>  
-			<button className='button' type="button" onClick={() => setSelectedFolder("Graduation")}>
-				Graduation
-			</button>  
-			<button className='button' type="button" onClick={() => setSelectedFolder("Wedding")}>
-				Wedding
-			</button>  
-			<button className='button' type="button" onClick={() => setSelectedFolder("Automobile")}>
-				Automobile
-			</button>  
-		</div> */}
-		
 		<div className='images-item'>
-			<img src={suki_1} alt=""/>
-			<img src={suki_2} alt=""/>
-			{/*<img src={suki_3} alt=""/>
-			<img src={carRolling} alt="86 Rolling"/>
-			<img src={carWheel} alt="86 Wheel"/>
-			<img src={carTaillight} alt="86 Taillight"/>
-			<img src={carHeadlight} alt="86"/> */}
-		
-		</div> 
+			Item 1
+		</div>
+		<div className='images-item'>
+			Item 2
+		</div>
+		<div className='images-item'>
+			Item 3
+		</div>
+		<div className='images-item'>
+			Item 4
+		</div>
+		<div className='images-item'>
+			Item 5
+		</div>
+		<div className='images-item'>
+			Item 6
+		</div>
+		<div className='images-item'>
+			Item 7
+		</div>
+		<div className='images-item'>
+			Item 8 
+		</div>
+		<div className='images-item'>
+			Item 9
+		</div>
 	</div>
   )
 }

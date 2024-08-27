@@ -1,17 +1,21 @@
 
 .images-container {
-  /* position: relative; */
-  /* margin-top: 10px;
   display: grid;
-  align-items: center;
-  overflow-y: auto; */
+  grid-template: repeat(3, auto) / repeat(3, auto);
+  border: 1px solid blue;
+  padding: 12px;
+  gap: 12px;
+  height: 100%;
+  width: 100%;
 }
-/*   
+  
 .images-item {
-  display: block;
-  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid yellow;
 }
-  */
+ 
 .images-item img {
   width: 25%;
   max-width: 100%;

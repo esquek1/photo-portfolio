@@ -8,6 +8,7 @@ import { FiMenu } from "react-icons/fi";
 
 function Header() {
 	const [selectedFolder, setSelectedFolder] = useState('Portraits');
+	
   return (
     <div className='header-container'>
 		<div className='header-item header-item-1'>

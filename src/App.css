@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
 	/* grid-template-rows: repeat(3, 1fr); */
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: repeat(3, auto);
   border: 1px solid;
   border-color: #ede0c8;
   padding: 32px;
@@ -15,6 +15,32 @@
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.header {
+  grid-row: span 1;
+}
+
+.content {
+  grid-row: span 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the content section takes up the full middle row */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensures it takes up the entire middle row */
+  width: 100%; /* Full width to match the container */
+  flex-grow: 1; /* Forces it to grow and fill the available space */
+  overflow: hidden;
 }
 
 @media (max-width: 2560px){
@@ -32,7 +58,7 @@
   }
 }
 .grid-item {
-
+  gap: 16px;
 }
 
 

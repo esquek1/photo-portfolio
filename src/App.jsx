@@ -15,39 +15,48 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<div className='grid-container'>
-			<div className='grid-item content'>
-				<BrowserRouter>
-					<div className='header'>
-						<Header />
-					</div> 
-					<div className='header-links'>
-						<Routes>
-							<Route index element={<Home />} />
-							<Route path="about" element={<About />} />
-							<Route path="contact" element={<Contact />} />
-							<Route path="work" element={<Work />} />
-						</Routes>
-					</div>
-					
-				</BrowserRouter>
-			
-			</div>
-	
-		
-			<div className='grid-item footer-content'> 
-				<BrowserRouter>
-					<div className='footer'>
-						<Footer />
-					</div> 
+			<BrowserRouter>
+			{/* <div className='grid-item content'>
+				<div className='header'>
+					<Header />
+				</div> 
+				<div className='header-links'>
 					<Routes>
 						<Route index element={<Home />} />
 						<Route path="about" element={<About />} />
 						<Route path="contact" element={<Contact />} />
 						<Route path="work" element={<Work />} />
 					</Routes>
-				</BrowserRouter>
+				</div>
+			</div> */}
+			<div className='grid-item header'>
+				<div className='header'>
+					<Header />
+				</div> 
 			</div>
-			
+			<div className='grid-item content'>
+				<div className='header-links'>
+					<Routes>
+						<Route index element={<Home />} />
+						<Route path="about" element={<About />} />
+						<Route path="contact" element={<Contact />} />
+						<Route path="work" element={<Work />} />
+					</Routes>
+				</div>
+			</div>
+				
+			<div className='grid-item footer-content'> 
+				<div className='footer'>
+					<Footer />
+				</div> 
+				<Routes>
+					<Route index element={<Home />} />
+					<Route path="about" element={<About />} />
+					<Route path="contact" element={<Contact />} />
+					<Route path="work" element={<Work />} />
+				</Routes>
+			</div>
+			</BrowserRouter>
 		</div>
 	)
 }
