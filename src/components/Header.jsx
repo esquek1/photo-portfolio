@@ -23,9 +23,27 @@ function NavItem(props) {
 	)
 }
 
+function DropDownMenu() {
+	return (
+		<li  className='dropdown-content'>
+			{props.children}
+		</li>
+	)
+}
+
+function DropDownItem(props) {
+	const [selectedFolder, setSelectedFolder] = useState('Work');
+	const handleClick = () => {
+		setSelectedFolder(props.name)
+	}
+	return (
+		<a href='' onClick={handleClick}>
+			{props.children}
+		</a>
+	)
+}
 
 function Header() {
-	const [selectedFolder, setSelectedFolder] = useState('Portraits');
 	
   return (
     <div className='header-container'>
@@ -48,7 +66,15 @@ function Header() {
 				<NavItem to="/"> Home</NavItem>
 				<NavItem to="/about"> About </NavItem>
 				<NavItem to="/contact"> Contact</NavItem>
-				<NavItem to="/work"> Work </NavItem>
+				<NavItem to="/work"> 
+					Work
+					<DropDownItem name="Portraits"> Portraits</DropDownItem>
+					<DropDownItem name="Graduation"> Graduation</DropDownItem>
+					<DropDownItem name="Wedding"> Wedding</DropDownItem>
+					<DropDownItem name="Automobiles"> Automobiles</DropDownItem>
+
+				</NavItem>
+				
 			</Navbar>
 
 
