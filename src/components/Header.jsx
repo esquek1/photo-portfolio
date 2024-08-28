@@ -5,6 +5,24 @@ import "../css/header.css"
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 
+function Navbar(props) {
+	return (
+		<nav className='item'>
+			<ul className='nav-list'>
+				{props.children}
+			</ul>
+		</nav>
+	)
+}
+
+function NavItem(props) {
+	return (
+		<li className='nav-item'>
+			<Link to={props.to}>{props.children}</Link>
+		</li>
+	)
+}
+
 
 function Header() {
 	const [selectedFolder, setSelectedFolder] = useState('Portraits');
@@ -26,8 +44,15 @@ function Header() {
 					<img src={linkedInLogo} className="logo linkedin" alt="LinkedIn logo" />
 				</a>
 			</div>
+			<Navbar>
+				<NavItem to="/"> Home</NavItem>
+				<NavItem to="/about"> About </NavItem>
+				<NavItem to="/contact"> Contact</NavItem>
+				<NavItem to="/work"> Work </NavItem>
+			</Navbar>
 
-			<nav className='item'>
+
+			{/* <nav className='item'>
 				<ul className='nav-list'>
 					<li className='nav-item'>
 						<Link to="/">Home</Link>
@@ -42,17 +67,23 @@ function Header() {
 						<li className="nav-item extraBorder">
 							<Link to="/work">Work</Link>
 							<div className='dropdown-content'>
-								<a href='' onClick={() => setSelectedFolder("Portraits")}>Portraits</a>
-								<a href='' onClick={() => setSelectedFolder("Graduation")}>Graduation</a>
-								<a href='' onClick={() => setSelectedFolder("Wedding")}>Wedding</a>
-								<a href='' onClick={() => setSelectedFolder("Automobiles")}>Automobiles</a>
+								<a href='' onClick={() => setSelectedFolder("Portraits")}>
+									Portraits
+								</a>
+								<a href='' onClick={() => setSelectedFolder("Graduation")}>
+									Graduation
+								</a>
+								<a href='' onClick={() => setSelectedFolder("Wedding")}>
+									Wedding
+								</a>
+								<a href='' onClick={() => setSelectedFolder("Automobiles")}>
+									Automobiles
+								</a>
 							</div>
 						</li>
 					</div>
-					
 				</ul>
-				
-			</nav>
+			</nav> */}
 		</div>
 		
 	</div>

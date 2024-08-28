@@ -21,6 +21,7 @@ function App() {
 					<Header />
 				</div> 
 			</div>
+			
 			<div className='grid-item content '>
 				<Routes>
 					<Route index element={<Home />} />
