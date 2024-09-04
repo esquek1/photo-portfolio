@@ -9,7 +9,10 @@ import carWheel from '/86-wheel.jpg'
 import carTaillight from '/86-taillight.jpg'
 import carHeadlight from '/86-headlight.jpg'
 import carRolling from '/86-rolling.jpg'
+import reactlogo from '../assets/react.svg'
+
 import "../css/work.css"
+import sample from '../assets/images/Portraits/IMG_9891.jpg'
 
 
 function Work() {

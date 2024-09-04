@@ -1,13 +1,26 @@
 
 .images-container {
-  display: grid;
-  grid-template: repeat(3, auto) / repeat(3, auto);
+  /* display: grid; */
+  /* grid-template: repeat(3, auto) / repeat(3, auto); */
+  /* grid-template-columns: 3;
   padding: 12px;
   gap: 12px;
   height: 100%;
-  width: 100%;
+  width: 100%; */
 }
   
+.images-container {
+  column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+ 
+  column-width: 33%;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+
+  padding: 0 12px;
+}
+
 .images-item {
   display: flex;
   align-items: center;
