@@ -2,7 +2,6 @@
 .images-container {
   display: grid;
   grid-template: repeat(3, auto) / repeat(3, auto);
-  border: 1px solid blue;
   padding: 12px;
   gap: 12px;
   height: 100%;

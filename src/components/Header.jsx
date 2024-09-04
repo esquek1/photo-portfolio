@@ -25,7 +25,7 @@ function NavItem(props) {
 
 function DropDownMenu() {
 	return (
-		<li  className='dropdown-content'>
+		<li className='dropdown-content'>
 			{props.children}
 		</li>
 	)
@@ -39,6 +39,7 @@ function DropDownItem(props) {
 	return (
 		<a href='' onClick={handleClick}>
 			{props.children}
+			
 		</a>
 	)
 }
@@ -66,14 +67,25 @@ function Header() {
 				<NavItem to="/"> Home</NavItem>
 				<NavItem to="/about"> About </NavItem>
 				<NavItem to="/contact"> Contact</NavItem>
-				<NavItem to="/work"> 
-					Work
-					<DropDownItem name="Portraits"> Portraits</DropDownItem>
-					<DropDownItem name="Graduation"> Graduation</DropDownItem>
-					<DropDownItem name="Wedding"> Wedding</DropDownItem>
-					<DropDownItem name="Automobiles"> Automobiles</DropDownItem>
-
-				</NavItem>
+				<div className='dropdown-menu'>
+					<li className="nav-item extraBorder">
+						<Link to="/work">Work</Link>
+						<div className='dropdown-content'>
+							<a href='' onClick={() => setSelectedFolder("Portraits")}>
+								Portraits
+							</a>
+							<a href='' onClick={() => setSelectedFolder("Graduation")}>
+								Graduation
+							</a>
+							<a href='' onClick={() => setSelectedFolder("Wedding")}>
+								Wedding
+							</a>
+							<a href='' onClick={() => setSelectedFolder("Automobiles")}>
+								Automobiles
+							</a>
+						</div>
+					</li>
+				</div>
 				
 			</Navbar>
 
