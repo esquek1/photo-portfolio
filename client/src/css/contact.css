@@ -1,0 +1,14 @@
+.contact-container {
+    display: grid;
+    border: 1px solid;
+    margin: 12px;
+    padding: 24px;
+}
+
+.contact-item {
+
+}
+
+.contact-content {
+    border: 1px solid seashell;
+}
