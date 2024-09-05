@@ -4,9 +4,9 @@ package-lock.json
 # Environment variables (API keys, secrets, etc)
 .env
 
+# Log Files
 .log 
-
-*.log
+*.log.*
 
 # Cache files
 /.cache/
@@ -15,4 +15,10 @@ package-lock.json
 # IDE/Editor-Specific
 .vscode/
 
-node_modules
+# MacOS
+.DS_Store
+
+# Dependency directories
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
