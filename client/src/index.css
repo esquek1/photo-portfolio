@@ -38,6 +38,11 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --16px: 1rem;
+  --24px: 1.5rem;
+  --32px: 2rem;
+  --3000px: 18.75rem;
 }
 
 a {
